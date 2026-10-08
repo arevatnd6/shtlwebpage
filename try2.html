@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Heramb Test Lab (P) Ltd</title>
+<title>Transformer oil testing laboratory</title>
+    <style>
+
+        :root {
+            --primary: #004080;
+            --secondary: #f4f4f4;
+            --accent: #e67e22;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        /* Header & Logos */
+        header {
+            background:black;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .logo-container img {
+            height: 100px;
+            width: auto;
+        }
+
+        h1 { color: var(--primary); margin: 0; }
+        .tagline { font-weight: bold; color: #666; }
+
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .tabs li {
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .tabs li:hover, .tabs li.active {
+            background: var(--accent);
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px;
+        }
+
+        td { padding: 10px; vertical-align: top; }
+
+        tr:nth-child(even) { background-color: #f9f9f9; }
+
+        /* Accordion (Technical Data) */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+            margin-top: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .active-acc, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 20px;
+            display: none;
+            background-color: white;
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .panel img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin-top: 15px;
+            border: 2px solid #ddd;
+        }
+
+        /* Images */
+        .fixed-img {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .profile-box {
+            background: #f1f8ff;
+            padding: 15px;
+            border-left: 5px solid var(--primary);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>⚡SHREE HERAMB TEST LAB (P) LTD ⚡</h1>
+    <p class="tagline">NABL Accredited Transformer Oil Testing Laboratory</p>
+    <div class="logo-container">
+        <img src="SHTL Logo.jpg" style="float: Right; height: 550; max-width: 150%;">
+        <img src="NABL logo.jpg" style="float: Right; height: 550; max-width: 150%;">
+    </div>
+</header>
+
+<nav>
+    <ul class="tabs">
+        <li class="active" onclick="openTab(event, 'home')">Home</li>
+        <li onclick="openTab(event, 'profile')">Company Profile</li>
+        <li onclick="openTab(event, 'Certification')">Certification</li>
+        <li onclick="openTab(event, 'whytest')">Why Testing?</li>
+        <li onclick="openTab(event, 'techdata')">Technical Data</li>
+        <li onclick="openTab(event, 'customers')">Valuable Customers</li>
+        <li onclick="openTab(event, 'contact')">Contact Us</li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <section id="home" class="tab-content active">
+        <h2>Welcome to SHTL</h2>
+<img src="GC.gif" style="float: Right; height: 250; max-width: 37%;">
+
+
+<div style="display:flex; justify-content: space-around; flex-wrap: wrap;"></div>
+        <p>SHTL's Transformer Oil Laboratory is built on the foundation of unwavering integrity and client-centricity. Your trust is our paramount concern, and your success defines our achievements. We guarantee absolute impartiality and confidentiality in every analysis we conduct.</p>
+        <p>Our NABL and ILAC accreditations underscore our commitment to international quality standards, ensuring reliable and accurate results. We strictly adhere to national and international standards, utilizing the latest equipment and advanced fault analysis tools. Our team of experienced engineers leverages their expertise to provide comprehensive diagnostic services.</p>
+        <p>We understand the critical importance of timely results. Therefore, we prioritize on-time delivery without compromising accuracy. Our laboratory is equipped with state-of-the-art technology, enabling us to perform precise tests, including DGA, breakdown voltage, and moisture content analysis.</p>
+        <p>We also assist in compliance fulfillment, ensuring your operations meet regulatory requirements. Our focus on detailed fault analysis allows us to pinpoint issues and provide actionable insights for preventative maintenance. SHTL is your reliable partner, dedicated to optimizing your transformer performance and longevity.</p>
+ 
+    </section>
+
+    <section id="profile" class="tab-content">
+        <h2>🏭 Company Profile</h2>
+        <p><strong>SHREE HERAMB TEST LAB PVT LTD (SHTL)</strong> is a One-person company (OPC) established on 26.02.2024 at Prayagraj, Uttar Pradesh. The laboratory is fully equipped with latest equipment’s for testing of Transformer Oil as per IS: 1866 : 2017. Dissolved gas analysis test method: IS 10593 : 2023, IEC 60567 : 2011 & IS9434 : 2019 (Toepler extraction method).</p>
+        <p>We comply all the statutory registrations as COI, Goods and Service Tax & MSME.</p>
+
+        <div class="profile-box">
+            <h3>👥 Mr. Om Prakash Upadhyay - M.D.</h3>
+            <p>He has served 35 years in Indian Army, Corps of signals & combat support in department. He has posted at Ordinance Fort, Prayagraj.</p>
+        </div>
+
+        <div class="profile-box">
+            <h3>👥 Mr. Vijay Kumar - Quality Manager</h3>
+            <p>Electrical Engineer. Served for more than 15 years in various Transformer manufacturing companies such as Areva T&D, GE India, Alstom T&D India etc. leading ETC projects. Trained in ISO 17025:2017 by QCI.</p>
+        </div>
+
+        <div class="profile-box">
+            <h3>👥 Mr. Shubham Vyas - Technical Manager</h3>
+            <p>MBA in Project & B.Tech in Electrical & Electronics Engineering (UP Technical University). Over 14 years in Transformer manufacturing (GE T&D India). Previously Quality Manager in Motwane oil test lab. Trained in 17025:2017 by QCI & Six Sigma Green Belt.</p>
+        </div>
+    </section>
+
+    <section id="Certification" class="tab-content">
+        <h2>Certification</h2>
+ <img src="NABLTC.jpg" style="float: Right; height: 250; max-width: 37%;">
+        <div style="background:#f9f9f9; padding:20px; border: 1px solid #ddd;">
+
+<div style="display:flex; justify-content: space-around; flex-wrap: wrap;">
+          
+</div>
+
+            <h3>🎯Quality Policy </h3>
+            <ul>
+                <li><strong>S - Smart testing:</strong> Services and solutions with a total quality management system in compliance with ISO/IEC 17025-2017.</li>
+                <li><strong>H - High-quality:</strong> Precise, accurate test results and complete solutions to valuable customers.</li>
+                <li><strong>T - Timely delivery:</strong> Services as per schedule, following national and international standards.</li>
+                <li><strong>L - Leading the competition:</strong> Maintaining up-to-date professional laboratory Practices and continually upgrading testing facilities.</li>
+            </ul>
+        </div>
+
+        <h3>🎯 Quality Objectives</h3>
+        <ul>
+            <li>Maintaining response time and identified KPIs and sustenance of accreditations.</li>
+            <li>Endeavour to achieve customer satisfaction and minimize complaints.</li>
+            <li>Ensure confidence of stakeholders in accuracy and reliability of results.</li>
+            <li>Consistently comply with ISO/IEC 17025:2017.</li>
+            <li>Maintain a customer satisfaction index of more than 80%.</li>
+        </ul>
+
+    </section>
+
+    <section id="whytest" class="tab-content">
+        <h2> ⚠️ Why Transformer oil is to be tested?</h2>
+        <p>Transformer oil testing is essential for ensuring the reliable operation and longevity of transformers. It serves multiple functions: electrical insulation, cooling, and arc suppression. Regular testing is necessary for:</p>
+        <ul>
+            <li><strong>Detecting Electrical Faults:</strong> Identify partial discharges and arcing promptly.</li>
+            <li><strong>Assessing Oil Condition:</strong> Checking dielectric strength, moisture, and acidity.</li>
+            <li><strong>Preventing Downtime:</strong> Proactive maintenance reduces risk of unexpected failures.</li>
+            <li><strong>Ensuring Safety:</strong> Preventing fire, explosions, and environmental pollution.</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sl No.</th>
+                    <th>Test</th>
+                    <th>Standard</th>
+                    <th>Significance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Dissolve Gas Analysis</td><td>IS 10593/ IS 9434, IEC 60567</td><td>Internal condition of transformer & fault gases.</td></tr>
+                <tr><td>2</td><td>Moisture/Water Content</td><td>IS 13567 / IS 1448</td><td>Prevents degradation and rusting.</td></tr>
+                <tr><td>3</td><td>Breakdown Voltage (BDV)</td><td>IS 6792</td><td>Electrical strength of the oil.</td></tr>
+                <tr><td>4</td><td>Appearance</td><td>IS 335</td><td>Indicates level of degradation.</td></tr>
+                <tr><td>5</td><td>Density</td><td>IS 1448 (PART 16)</td><td>Impacts cooling flow rate.</td></tr>
+                <tr><td>6</td><td>Acidity</td><td>IS 1448 (PART 2)</td><td>Indicates formation of corrosiveness.</td></tr>
+                <tr><td>7</td><td>Flash Point</td><td>IS 1448 (PART 21)</td><td>Safe operating temperature.</td></tr>
+                <tr><td>8</td><td>Resistivity</td><td>IS 16840</td><td>Insulating strength.</td></tr>
+                <tr><td>9</td><td>Tan Delta</td><td>IS 16840</td><td>Insulating property quality.</td></tr>
+                <tr><td>10</td><td>Sediment</td><td>IS 1866 Annex C</td><td>Measures sludge in core/winding.</td></tr>
+                <tr><td>11</td><td>Inter Facial Tension (IFT)</td><td>IS 6104</td><td>Surface tension between oil & water.</td></tr>
+            </tbody>
+        </table>
+
+        <div style="display:flex; justify-content: space-around; flex-wrap: wrap;">
+            <img src="transformer oil.jpg">
+            <img src="ITO.jpg">
+            <img src="classi.jpg">
+        </div>
+    </section>
+
+    <section id="techdata" class="tab-content">
+        <h2>📊Technical Data</h2>
+        
+        <button class="accordion">DGA (Dissolved Gas Analysis)</button>
+        <div class="panel">
+            <p>DGA is the most important tool for detecting incipient faults in oil-filled electrical equipment. gases like H2, CO, CO2, CH4,C2H2, C2H4, C2H6, O2, N2 are analyzed.</p>
+            <img src="DGA1.jpg" style="float: Left; height: 250; max-width: 100%;">
+ <img src="DGA2.jpg" style="float: Left; height: 250; max-width: 100%;">
+ <img src="DGA3.jpg" style="float: Center; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Moisture Content</button>
+        <div class="panel">
+            <p>Moisture content in transformer oil affects the dielectric properties and paper insulation life. It is measured in ppm (parts per million).</p>
+            <img src="MC.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Breakdown Voltage (BDV)</button>
+        <div class="panel">
+            <p>Measures the ability of the oil to withstand electric stress. High BDV indicates low moisture and contaminants.</p>
+           <img src="BDV.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Interfacial Tension (IFT)</button>
+        <div class="panel">
+            <p>IFT measures the surface tension between oil and water, indicating the presence of polar contaminants and oil decay products.</p>
+           <img src="IFT.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Flash Point</button>
+        <div class="panel">
+            <p>The lowest temperature at which the oil gives off enough vapor to ignite. Low flash point indicates contamination with volatile oils.</p>
+            <img src="FP.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Sediment</button>
+        <div class="panel">
+            <p>Testing for solid particles that can block cooling ducts or settle on windings.</p>
+          <img src="Sediment.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Tan Delta</button>
+        <div class="panel">
+            <p>Measures the dielectric dissipation factor. High values indicate contamination or deterioration of oil.</p>
+            <img src="TD.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Resistivity</button>
+        <div class="panel">
+            <p>Specific resistance of the oil. High resistivity is indicative of low ionic contamination.</p>
+            <img src="Resis.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Density</button>
+        <div class="panel">
+            <p>Specific gravity of the oil, important for oil circulation and heat dissipation.</p>
+           <img src="Density.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+<button class="accordion">Acidity</button>
+        <div class="panel">
+            <p>Neutralization value indicating the amount of acidic components produced during oxidation.</p>
+            <img src="Acid.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        <button class="accordion">Viscosity</button>
+        <div class="panel">
+            <p>Measures the resistance to flow. Crucial for the cooling properties of the transformer.</p>
+           <img src="Visco.jpg" style="float: Left; height: 250; max-width: 100%;">
+        </div>
+
+        
+    </section>
+
+    <section id="customers" class="tab-content">
+        <h2> 🏆Our Valuable Customers</h2>
+        <div class="gallery" id="customerGallery">
+      <img src="1.jpg" alt="client1" width="200" height="100" onerror="this.onerror=null;this.src='https://placehold.co/200x100?text=Customer+Logo';">
+            <img src="2.jpg" alt="client2" width="100" height="100" onerror="this.onerror=null;this.src='https://placehold.co/100x100?text=Logo';">
+            <img src="3.jpg" alt="TROYER" width="100" height="100" onerror="this.onerror=null;this.src='https://placehold.co/100x100?text=TROYER';">
+            <img src="4.jpg" alt="UltraTech" width="100" height="100" onerror="this.onerror=null;this.src='https://placehold.co/100x100?text=UltraTech';">
+            <img src="5.png" alt="customer5" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Client';">
+            <img src="6.jpg" alt="PRAYAGRAJ POWER" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=PPGCL';">
+            <img src="7.jpg" alt="Dedicated Freight Corridor" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=DFC';">
+            <img src="8.jpg" alt="customer8" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Partner';">
+            <img src="9.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="10.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="11.png" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="12.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="13.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="14.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="15.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="16.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="17.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+ <img src="18.jpg" alt="customer9" width="150" height="120" onerror="this.onerror=null;this.src='https://placehold.co/150x120?text=Industry';">
+            </div>
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h2>Contact Us</h2>
+        <div style="background: #f4f4f4; padding: 30px; border-radius: 10px;">
+            <p><strong>Address:</strong><br>
+            312/12 Nai Bazar, Udyog Nagar,<br>
+            Inside NSIC campus, Naini,<br>
+            Prayagraj - 211009</p>
+            
+            <p><strong>Mobile:</strong><br>
+            6386609618, 7388237237</p>
+            
+            <p><strong>Email:</strong><br>
+            <a href="mailto:shreeherambtestlab@outlook.com">shreeherambtestlab@outlook.com</a></p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2024 Shree Heramb Test Lab (P) Ltd. All Rights Reserved.
+</footer>
+
+<script>
+    // Tab switching logic
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tabs")[0].getElementsByTagName("li");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+    }
+
+    // Accordion logic
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active-acc");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+    // Generate Customer Gallery Placeholders
+    const gallery = document.getElementById('customerGallery');
+    for (let i = 1; i <= 19; i++) {
+        const img = 1('img');
+        img.src = `https://via.placeholder.com/150?text=1+Logo+${i}`;
+        img.alt = `1 ${i}`;
+        gallery.appendChild(img);
+    }
+</script>
+
+</body>
+</html>
